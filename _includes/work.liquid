@@ -1,0 +1,14 @@
+<section>
+  <h2>Experience</h2>
+  {% for post in collections.experience %}
+    <article>
+      <header>
+        <h3>{{ post.data.title }}</h3>
+        <span>{{ post.data.workingDate }}</span>
+      </header>
+      <div>
+        {{ post.content }}
+      </div>
+    </article>
+  {% endfor %}
+</section>

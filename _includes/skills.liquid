@@ -1,0 +1,11 @@
+<section>
+  <h2>Skills:
+  </h2>
+  <ul class="skill">
+    {% for skill in collections.skills %}
+      <li>
+        <span class="pill">{{ skill }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
