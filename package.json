@@ -1,0 +1,11 @@
+{
+  "name": "fun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NerdieIrina/fun.git",
+  "author": "Irina <evance@mail.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
