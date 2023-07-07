@@ -1,12 +1,12 @@
 <section>
   <h2>Experience</h2>
   {% for post in collections.experience %}
-    <article>
-      <header>
+    <article class="border--bottom">
+      <header class="work__header">
         <h3>{{ post.data.title }}</h3>
-        <span>{{ post.data.workingDate }}</span>
+        <span class="pill">{{ post.data.workingDate }}</span>
       </header>
-      <div>
+      <div class="content">
         {{ post.content }}
       </div>
     </article>

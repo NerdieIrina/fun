@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
       .flat();
     return [...new Set(skillset)];
   });
+
   eleventyConfig.setFrontMatterParsingOptions({
     workingDate: true,
     skills: true,
