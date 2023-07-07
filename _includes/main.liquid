@@ -9,14 +9,19 @@ title: Default title
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}
     </title>
+    <meta name="description" content="Irina Petrova, a super friendly front-end developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="assets/app.css"
+      rel="stylesheet"
+      media="all">
   </head>
   <body>
     {{ content }}
-
-    {% for experience in collection.experiences %}
-      <p>
-        <a href="{{ experience.url }}">{{ experience.data.title }}</a>
-      </p>
-    {% endfor %}
   </body>
 </html>

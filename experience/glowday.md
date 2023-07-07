@@ -1,8 +1,11 @@
 ---
 title: Senior Front-end Developer at Glowday
 layout: experience
-date: 10/2019 - 07/2023
-**---**
+workingDate: 10/2019 - 07/2023
+tags: experience
+permalink: false
+skills: ['HTML', 'SCSS', 'React', 'Typescript', 'Next.js', 'Figma', 'Invision', 'Cypress', 'Jest', 'React Testing Library', 'TDD']
+---
 
 - Unified the design language used throughout the product
 - Enforced standards for composing and styling components using BEM, Sass, ESLint and Prettier
