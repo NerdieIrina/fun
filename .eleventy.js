@@ -1,9 +1,18 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets/app.css");
+const CleanCSS = require("clean-css");
 
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addLiquidFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
   eleventyConfig.addCollection("experience", function (collection) {
     return collection.getAllSorted().filter(function (item) {
       return item.inputPath.match(/^\.\/experience\//) !== null;
+    });
+  });
+
+  eleventyConfig.addCollection("awards", function (collection) {
+    return collection.getAllSorted().filter(function (item) {
+      return item.inputPath.match(/^\.\/awards\//) !== null;
     });
   });
 

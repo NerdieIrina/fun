@@ -16,10 +16,13 @@ title: Default title
       href="https://fonts.gstatic.com"
       crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link
-      href="assets/app.css"
-      rel="stylesheet"
-      media="all">
+
+    {% capture css %}
+      {% include 'assets/app.css' %}
+    {% endcapture %}
+    <style>
+      {{ css | cssmin  }}
+    </style>
   </head>
   <body>
     {{ content }}

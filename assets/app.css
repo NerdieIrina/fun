@@ -36,9 +36,9 @@ h6 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: hsl(217, 51%, 8%);
-    --text: hsl(27, 11%, 64%);
-    --cta: hsl(230, 9%, 60%);
+    --background: #0a121f;
+    --text: hsl(246, 33%, 64%);
+    --cta: hsl(6, 70%, 64%);
   }
 }
 
@@ -63,7 +63,8 @@ main {
 }
 
 main > *,
-main > * > article {
+main > * > article,
+footer {
   margin-block-end: 2rem;
 }
 
@@ -154,4 +155,8 @@ a.btn {
   color: var(--background);
   transform: rotate(-8deg);
   transition: all ease-in-out 0.3s;
+}
+
+a {
+  color: var(--cta);
 }

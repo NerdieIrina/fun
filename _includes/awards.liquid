@@ -1,0 +1,14 @@
+<section>
+  <h2>Awards and Qualifications</h2>
+  {% for award in collections.awards %}
+    <article class="border--bottom">
+      <header class="work__header">
+        <h3>{{ award.data.title }}</h3>
+        <span class="pill">{{ award.data.workingDate }}</span>
+      </header>
+      <div class="content">
+        {{ award.content }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
