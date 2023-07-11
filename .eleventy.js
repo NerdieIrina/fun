@@ -28,5 +28,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     workingDate: true,
     skills: true,
+    order: true,
   });
 };
