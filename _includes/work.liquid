@@ -1,10 +1,10 @@
 <section>
   <h2>Experience</h2>
-  {% for post in collections.experience %}
+  {% for post in collections.experience | reverse: "data.workingDate" %}
     <article class="border--bottom">
       <header class="work__header">
         <h3>{{ post.data.title }}</h3>
-        <span class="pill">{{ post.data.workingDate }}</span>
+        <time datetime="{{ workingDate }}" class="pill">{{ post.data.workingDate }}</time>
       </header>
       <div class="content">
         {{ post.content }}
