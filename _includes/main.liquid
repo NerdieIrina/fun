@@ -12,11 +12,16 @@ title: Default title
     <meta name="description" content="Irina Petrova, a super friendly front-end developer">
     <meta name="format-detection" content="telephone=no" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      rel="stylesheet">
 
     {% capture css %}
       {% include 'assets/app.css' %}
