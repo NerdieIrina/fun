@@ -4,6 +4,7 @@ layout: experience
 workingDate:  03/2017 - 10/2019
 tags: experience
 permalink: false
+order: 2
 skills: ['HTML', 'CSS', 'Blade', 'PHP', 'Laravel', 'Wordpress', 'mySQL', 'Codeception']
 ---
 

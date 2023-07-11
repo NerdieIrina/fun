@@ -1,6 +1,8 @@
 <section>
   <h2>Experience</h2>
-  {% for post in collections.experience | reverse: "data.workingDate" %}
+
+  {% assign workByOrder = collections.experience | sort: "data.order" %}
+  {% for post in workByOrder %}
     <article class="border--bottom">
       <header class="work__header">
         <h3>{{ post.data.title }}</h3>
