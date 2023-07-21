@@ -3,7 +3,6 @@ const runtimeCache = "RunTime";
 const precachedResources = ["/", "/assets/font/Nunito-VariableFont_wght.ttf"];
 
 self.addEventListener("install", (event) => {
-  console.log("hey");
   event.waitUntil(
     caches
       .open(cacheName)
@@ -15,7 +14,6 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   const currentCaches = [cacheName];
 
-  console.log("activate");
   event.waitUntil(
     caches
       .keys()
@@ -36,7 +34,6 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log("fetch");
   if (event.request.url.startsWith(self.location.origin)) {
     console.log(event.request.url.startsWith(self.location.origin));
     event.respondWith(
