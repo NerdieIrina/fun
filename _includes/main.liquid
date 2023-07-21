@@ -10,13 +10,20 @@ title: Default title
     <title>{{ title }}
     </title>
     <meta name="description" content="Irina Petrova, a super friendly front-end developer">
+    <link rel="icon" href="/assets/icons/icon-32.png" sizes="32x32">
+    <link rel="icon" href="/assets/icons/icon-128.png" sizes="128x128">
+    <link rel="icon" href="/assets/icons/icon-192.png" sizes="192x192">
+    <link rel="shortcut icon" sizes="196x196" href=“/assets/icons/icon-196.png">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-180.png" sizes="180x180">
     <meta name="format-detection" content="telephone=no" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
+      rel="preload"
+      href="/assets/font/Nunito-VariableFont_wght.ttf"
+      as="font"
+      type="font/woff2"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
 
     {% capture css %}
       {% include 'assets/app.css' %}
@@ -27,5 +34,10 @@ title: Default title
   </head>
   <body>
     {{ content }}
+    <script defer>
+      navigator.serviceWorker.register('/sw.js');
+
+    </script>
+    <script src="/assets/sw.js" defer></script>
   </body>
 </html>

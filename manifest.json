@@ -1,0 +1,18 @@
+{
+  "short_name": "Irina The Nerd",
+  "name": "Irina: a friendly front-end developer",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#0a121f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0a121f",
+  "description": "Quick experimental CV of Irina Petrova, a front-end developer from the UK"
+}
