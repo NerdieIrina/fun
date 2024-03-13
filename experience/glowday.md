@@ -4,7 +4,7 @@ layout: experience
 workingDate: 10/2019 - 07/2023
 tags: experience
 permalink: false
-order: 1
+order: 2
 skills: ['HTML', 'SCSS', 'React', 'Typescript', 'Next.js', 'Figma', 'Invision', 'Cypress', 'Jest', 'React Testing Library', 'TDD']
 ---
 

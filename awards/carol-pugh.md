@@ -6,4 +6,4 @@ tags: awards
 permalink: false
 ---
 
-Achieved 1:1 with Honours studying Computing, with focus on web development.
+And award for the best presentation amongst 1st year computing students
