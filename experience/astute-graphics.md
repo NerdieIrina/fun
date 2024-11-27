@@ -1,11 +1,21 @@
 ---
 title: Astute Graphics
 layout: experience
-workingDate:  03/2017 - 10/2019
+workingDate: 03/2017 - 10/2019
 tags: experience
 permalink: false
-order: 3
-skills: ['HTML', 'CSS', 'Blade', 'PHP', 'Laravel', 'Wordpress', 'mySQL', 'Codeception']
+order: 4
+skills:
+  [
+    "HTML",
+    "CSS",
+    "Blade",
+    "PHP",
+    "Laravel",
+    "Wordpress",
+    "mySQL",
+    "Codeception",
+  ]
 ---
 
 - Maintained WordPress website supporting e-commerce side of the business

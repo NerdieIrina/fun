@@ -3,14 +3,25 @@
 
   {% assign workByOrder = collections.experience | sort: "data.order" %}
   {% for post in workByOrder %}
-    <article class="border--bottom">
-      <header class="work__header">
-        <h3>{{ post.data.title }}</h3>
-        <time datetime="{{ workingDate }}" class="pill">{{ post.data.workingDate }}</time>
-      </header>
-      <div class="content">
-        {{ post.content }}
-      </div>
-    </article>
+  <article class="border--bottom">
+    <header class="work__header">
+      <h3>{{ post.data.title }}</h3>
+      <time datetime="{{ workingDate }}" class="pill">{{ post.data.workingDate }}</time>
+    </header>
+    <div class="content">
+      {{ post.content }}
+    </div>
+    {% assign projects = post.data.projects %}
+    {% if projects.length > 0 %}
+      <div class="projects">
+        <h4>Projects</h4>
+    <ul>
+      {% for project in projects %}
+        <li><a href={{ project.link }} class="pill">{{ project.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    </div>  
+  </article>
   {% endfor %}
 </section>
