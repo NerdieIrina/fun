@@ -2,7 +2,7 @@ const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy(
-    "./assets/font/Nunito-VariableFont_wght.ttf"
+    "./assets/font/Nunito-VariableFont_wght.ttf",
   );
 
   eleventyConfig.addPassthroughCopy("./sw.js");

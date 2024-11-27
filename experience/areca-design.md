@@ -4,8 +4,8 @@ layout: experience
 workingDate: 01/2016 - 03/2017
 tags: experience
 permalink: false
-order: 4
-skills: ['HTML', 'CSS', 'Twig', 'PHP', 'JS', 'Wordpress', 'Unity', 'Phonegap']
+order: 5
+skills: ["HTML", "CSS", "Twig", "PHP", "JS", "Wordpress", "Unity", "Phonegap"]
 ---
 
 - Worked with Twig for creating themes for in-house CMS

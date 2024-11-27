@@ -1,6 +1,6 @@
 {
   "name": "fun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/NerdieIrina/fun.git",
   "author": "Irina <evance@mail.ru>",
@@ -12,5 +12,8 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "clean-css": "^5.3.2"
+  },
+  "devDependencies": {
+    "prettier": "3.4.1"
   }
 }

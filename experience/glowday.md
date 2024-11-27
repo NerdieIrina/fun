@@ -4,8 +4,22 @@ layout: experience
 workingDate: 10/2019 - 07/2023
 tags: experience
 permalink: false
-order: 2
-skills: ['HTML', 'SCSS', 'React', 'Typescript', 'Next.js', 'Figma', 'Invision', 'Cypress', 'Jest', 'React Testing Library', 'TDD']
+order: 3
+skills:
+  [
+    "HTML",
+    "SCSS",
+    "React",
+    "Typescript",
+    "Next.js",
+    "Figma",
+    "Invision",
+    "Cypress",
+    "Jest",
+    "React Testing Library",
+    "TDD",
+  ]
+projects: [{ title: "Glowday", link: "https://glowday.com" }]
 ---
 
 - Unified the design language used throughout the product

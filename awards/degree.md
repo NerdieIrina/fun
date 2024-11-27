@@ -1,7 +1,7 @@
 ---
 title: University of Worcester
 layout: awards
-workingDate:  2013 - 2017
+workingDate: 2013 - 2017
 tags: awards
 permalink: false
 ---
