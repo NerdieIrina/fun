@@ -1,5 +1,5 @@
 ---
-title: E-commerce developer at Verse
+title: E-commerce developer at Verse 
 layout: experience
 workingDate: 08/2023 - 07/2024
 tags: experience
