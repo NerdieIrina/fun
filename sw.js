@@ -1,5 +1,5 @@
 const cacheName = "Font-Cache";
-const runtimeCache = "RunTime-v1";
+const runtimeCache = `RunTime-v-${new Date().toISOString()}`;
 const precachedResources = ["/", "/assets/font/Nunito-VariableFont_wght.ttf"];
 
 self.addEventListener("install", (event) => {

@@ -191,6 +191,7 @@ a.btn {
 }
 .projects ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-block: 0.25rem;
   padding-inline-start: 0;
@@ -198,4 +199,5 @@ a.btn {
 
 .projects ul li {
   display: inline;
+  margin: 0;
 }
